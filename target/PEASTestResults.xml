@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<testsuites errors="2" name="PEASTestSuite" test="5">
+  <testsuite errors="1" name="ConfigurationTest" test="4">
+    <testcase classname="PEASTestSuite" name="ServiceInstalledTest" />
+    <testcase classname="PEASTestSuite" name="ServiceRunFailureTest" />
+    <testcase classname="PEASTestSuite" name="ServiceRunSuccessTest" />
+    <testcase classname="PEASTestSuite" name="ConnectToServerSuccessTest">
+      <error message="Cannot start service PredixEdgeAgent on computer '.'." />
+    </testcase>
+  </testsuite>
+  <testsuite errors="1" name="SyncMessageTest" test="1">
+    <testcase classname="PEASTestSuite" name="SendSyncMessageToAzureTest">
+      <error message="Cannot start service PredixEdgeAgent on computer '.'." />
+    </testcase>
+  </testsuite>
+</testsuites>
